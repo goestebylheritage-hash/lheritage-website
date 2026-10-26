@@ -1,0 +1,3 @@
+# Oude adressen van de vorige WordPress-site doorsturen naar de nieuwe site
+/nl         /           301
+/nl/*       /           301
