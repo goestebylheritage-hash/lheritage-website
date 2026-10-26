@@ -170,7 +170,7 @@ def page(lang):
     langs = ''.join(f'<a href="{pre}{T[l]["path"].lstrip("/")}"{" aria-current=\"page\"" if l == lang else ""} lang="{l}">{l.upper()}</a>' for l in T)
     ld = {
         "@context": "https://schema.org", "@type": "BedAndBreakfast", "name": "l'Heritage",
-        "url": SITE + t['path'], "image": SITE + '/assets/img/gevel.jpg', "telephone": "+32 497 42 16 94", "email": "info@lheritage.be",
+        "url": SITE + t['path'], "image": SITE + '/assets/img/gevel-breed.jpg', "telephone": "+32 497 42 16 94", "email": "info@lheritage.be",
         "priceRange": "€80 – €115",
         "address": {"@type": "PostalAddress", "streetAddress": "Dorpplaats 15", "postalCode": "8647", "addressLocality": "Reninge", "addressCountry": "BE"},
         "numberOfRooms": 5,
@@ -224,8 +224,11 @@ def page(lang):
 
 <main id="top">
   <div class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
+    <div class="hero-photo">
+      <img src="{img('gevel-breed.jpg')}" srcset="{img('gevel-breed-1200.jpg')} 1200w, {img('gevel-breed.jpg')} 2400w" sizes="100vw" alt="{t['heroalt']}" width="2400" height="1602" fetchpriority="high">
+    </div>
+    <div class="wrap">
+      <div class="hero-card">
         <span class="eyebrow">{t['eyebrow']}</span>
         <h1>{t['h1']}</h1>
         <p class="lead">{t['lead']}</p>
@@ -235,11 +238,8 @@ def page(lang):
         </div>
         <p class="price-note">{t['pricenote']}</p>
       </div>
-      <div class="hero-art">
-        <img src="{img('gevel.jpg')}" alt="{t['heroalt']}" width="1600" height="1200" fetchpriority="high">
-      </div>
+      <div class="horizon">{HEART}</div>
     </div>
-    <div class="wrap"><div class="horizon">{HEART}</div></div>
   </div>
 
   <section id="verblijf">
