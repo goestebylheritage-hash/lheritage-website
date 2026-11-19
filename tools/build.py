@@ -27,6 +27,8 @@ T = {
     lead='Vijf kamers met elk hun eigen kleur, een uitgebreid ontbijt met streekproducten en de weidse IJzerbroeken vlak achter het dorp.',
     cta1='Bekijk beschikbaarheid', cta2='Wat je mag verwachten',
     pricenote='<strong>€80</strong> per nacht voor 1 persoon · <strong>€115</strong> voor 2 personen · ontbijt inbegrepen',
+    slides=["De oude kapelanij van l'Heritage aan de Dorpplaats in Reninge", 'Het terras en de tuin met buxushagen en hortensia\'s', 'De ontbijtzaal met rode wanden, kroonluchter en gedekte tafels', 'Kamer Vermillion met rode wand en bloemetjesdekbed', 'Ontbijt van bovenaf: broodjes, kaas, fruit en koffie', 'De tearoom met stenen bar en kroonluchter'],
+    slidelabel='Foto', slidenav='Kies een foto',
     heroalt="De oude kapelanij van l'Heritage aan de Dorpplaats in Reninge",
     stay_eyebrow='Jullie verblijf', stay_h='Een rustige uitvalsbasis tussen Ieper, Poperinge en Diksmuide',
     stay_p=["l'Heritage is een familiehuis aan de Dorpplaats van Reninge, in de vroegere kapelanij naast de kerk. Je slaapt in een klein, persoonlijk huis waar je 's avonds de stilte van de polder hoort en 's ochtends aanschuift aan een gedekte ontbijttafel.",
@@ -74,6 +76,8 @@ T = {
     lead="Cinq chambres, chacune avec sa propre couleur, un copieux petit-déjeuner aux produits du terroir et les vastes prairies de l'Yser juste derrière le village.",
     cta1='Voir les disponibilités', cta2='À quoi vous attendre',
     pricenote='<strong>80 €</strong> la nuit pour 1 personne · <strong>115 €</strong> pour 2 personnes · petit-déjeuner compris',
+    slides=["L'ancienne maison du chapelain, l'Heritage, sur la Dorpplaats de Reninge", 'La terrasse et le jardin avec haies de buis et hortensias', 'La salle du petit-déjeuner aux murs rouges, avec lustre et tables dressées', 'La chambre Vermillion avec son mur rouge et sa couette fleurie', 'Le petit-déjeuner vu du dessus : petits pains, fromages, fruits et café', 'Le salon de thé avec son bar en pierre et son lustre'],
+    slidelabel='Photo', slidenav='Choisir une photo',
     heroalt="L'ancienne maison du chapelain, l'Heritage, sur la Dorpplaats de Reninge",
     stay_eyebrow='Votre séjour', stay_h='Un point de chute paisible entre Ypres, Poperinge et Dixmude',
     stay_p=["l'Heritage est une maison familiale sur la place du village de Reninge, dans l'ancienne maison du chapelain à côté de l'église. Vous logez dans une petite maison chaleureuse où l'on entend le soir le calme des polders, et où une table dressée vous attend le matin.",
@@ -121,6 +125,8 @@ T = {
     lead='Five rooms, each with its own colour, a generous breakfast with local produce and the wide Yser meadows just beyond the village.',
     cta1='Check availability', cta2='What to expect',
     pricenote='<strong>€80</strong> a night for 1 person · <strong>€115</strong> for 2 people · breakfast included',
+    slides=["l'Heritage, the old chaplain's house on the village square of Reninge", 'The terrace and garden with box hedges and hydrangeas', 'The breakfast room with red walls, chandelier and laid tables', 'The Vermillion room with its red wall and floral duvet', 'Breakfast from above: rolls, cheese, fruit and coffee', 'The tearoom with its stone bar and chandelier'],
+    slidelabel='Photo', slidenav='Choose a photo',
     heroalt="l'Heritage, the old chaplain's house on the village square of Reninge",
     stay_eyebrow='Your stay', stay_h='A quiet base between Ypres, Poperinge and Diksmuide',
     stay_p=["l'Heritage is a family home on the village square of Reninge, in the former chaplain's house next to the church. You stay in a small, personal house where evenings are as quiet as the polders and breakfast is waiting on a laid table in the morning.",
@@ -160,6 +166,11 @@ T = {
 ),
 }
 
+SLIDES = ['slide-gevel', 'slide-terras', 'slide-ontbijtzaal', 'slide-vermillion', 'slide-ontbijt', 'slide-tearoom']
+
+# Uitsnede per foto aanpassen als het belangrijkste deel buiten beeld valt
+SLIDE_POS = {'slide-terras': ' style="object-position:50% 30%"'}
+
 HEART = '<svg viewBox="0 0 24 20" aria-hidden="true"><path d="M12 20C6 16 0 12 0 6.5 0 2.8 2.7 0 6 0c2.6 0 4.6 1.6 6 3.6C13.4 1.6 15.4 0 18 0c3.3 0 6 2.8 6 6.5C24 12 18 16 12 20z"/></svg>'
 IDS = ['verblijf', 'kamers', 'tearoom', 'streek']
 
@@ -173,7 +184,7 @@ def page(lang):
     langs = ''.join(f'<a href="{pre}{T[l]["path"].lstrip("/")}"{" aria-current=\"page\"" if l == lang else ""} lang="{l}">{l.upper()}</a>' for l in T)
     ld = {
         "@context": "https://schema.org", "@type": "BedAndBreakfast", "name": "l'Heritage",
-        "url": SITE + t['path'], "image": SITE + '/assets/img/gevel-breed.jpg', "telephone": "+32 497 42 16 94", "email": "info@lheritage.be",
+        "url": SITE + t['path'], "image": SITE + '/assets/img/slide-gevel.jpg', "telephone": "+32 497 42 16 94", "email": "info@lheritage.be",
         "priceRange": "€80 – €115",
         "address": {"@type": "PostalAddress", "streetAddress": "Dorpplaats 15", "postalCode": "8647", "addressLocality": "Reninge", "addressCountry": "BE"},
         "numberOfRooms": 5,
@@ -188,6 +199,10 @@ def page(lang):
     stay_p = ''.join(f'<p>{p}</p>\n          ' for p in t['stay_p'])
     rooms_p = ''.join(f'<p class="lead">{p}</p>\n        ' for p in t['rooms_p'])
     hours = ''.join(f'<div><dt>{n}<small>{w}</small></dt><dd>{d}<br>14:00 – 18:00</dd></div>\n          ' for n, w, d in t['seasons'])
+    slides = ''.join(
+        f'<img class="slide{" is-active" if i == 0 else ""}"{SLIDE_POS.get(f, "")} src="{img(f + ".jpg")}" srcset="{img(f + "-1000.jpg")} 1000w, {img(f + ".jpg")} 1920w" sizes="100vw" alt="{a}" width="1920" height="1280"{" fetchpriority=\"high\"" if i == 0 else " loading=\"lazy\""}>\n      '
+        for i, (f, a) in enumerate(zip(SLIDES, t['slides'])))
+    dots = ''.join(f'<button type="button" aria-label="{t["slidelabel"]} {i + 1}"{" aria-current=\"true\"" if i == 0 else ""}></button>' for i in range(len(SLIDES)))
     ct = t['contact']
     return f'''<!doctype html>
 <html lang="{t['htmllang']}">
@@ -228,8 +243,8 @@ def page(lang):
 
 <main id="top">
   <div class="hero">
-    <div class="hero-photo">
-      <img src="{img('gevel-breed.jpg')}" srcset="{img('gevel-breed-1200.jpg')} 1200w, {img('gevel-breed.jpg')} 2400w" sizes="100vw" alt="{t['heroalt']}" width="2400" height="1602" fetchpriority="high">
+    <div class="hero-photo" data-slideshow>
+      {slides}<div class="slide-dots" role="group" aria-label="{t['slidenav']}">{dots}</div>
     </div>
     <div class="wrap">
       <div class="hero-card">
@@ -347,6 +362,7 @@ def page(lang):
     </div>
   </div>
 </footer>
+<script src="{pre}assets/js/slideshow.js" defer></script>
 </body>
 </html>
 '''
