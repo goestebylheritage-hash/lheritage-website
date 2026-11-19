@@ -21,7 +21,7 @@ T = {
     path='/', htmllang='nl-BE',
     title="l'Heritage · B&B en tearoom in Reninge",
     desc="Bed & breakfast in de oude kapelanij van Reninge, tussen Ieper, Poperinge en Diksmuide. Vijf kamers met ontbijt met streekproducten, vanaf €80 per nacht.",
-    nav=['Verblijf', 'Kamers', 'Tearoom', 'De streek'], navbook='Boek een kamer', menu='Hoofdmenu', langlabel='Taal',
+    nav=['Verblijf', 'Kamers', 'Tearoom', 'De streek', 'Contact'], navbook='Boek een kamer', menu='Hoofdmenu', langlabel='Taal',
     eyebrow='Bed &amp; breakfast in de Westhoek',
     h1='Slapen in de oude kapelanij van Reninge',
     lead='Vijf kamers met elk hun eigen kleur, een uitgebreid ontbijt met streekproducten en de weidse IJzerbroeken vlak achter het dorp.',
@@ -58,7 +58,7 @@ T = {
             ('± 15 min', 'Diksmuide', 'De IJzertoren en de Dodengang, een van de best bewaarde loopgraven van de Eerste Wereldoorlog.'),
             ('± 10 min', 'Westvleteren', 'De abdij Sint-Sixtus en het bezoekerscentrum In de Vrede, bekend om het trappistenbier.'),
             ('± 30 min', 'De kust', 'Nieuwpoort en De Panne voor een dag zee en strand.')],
-    book_eyebrow='Boeken', book_h='Boek je kamer',
+    book_eyebrow='Boeken en contact', book_h='Boek je kamer',
     book_lead='Bekijk de vrije data en boek meteen online, rechtstreeks bij ons. Liever eerst iets vragen? Bel of mail ons gerust.',
     book_btn='Boek rechtstreeks', call='Bel ons', route='Route',
     contact=['Adres', 'Telefoon', 'E-mail', 'Ontbijt', 'Tearoom'], teatime='zomer wo–za, winter vr–za, 14:00 – 18:00',
@@ -70,7 +70,7 @@ T = {
     path='/fr/', htmllang='fr-BE',
     title="l'Heritage · Chambres d'hôtes et salon de thé à Reninge",
     desc="Chambres d'hôtes dans l'ancienne maison du chapelain de Reninge, entre Ypres, Poperinge et Dixmude. Cinq chambres, petit-déjeuner aux produits du terroir, à partir de 80 € la nuit.",
-    nav=['Séjour', 'Chambres', 'Salon de thé', 'La région'], navbook='Réserver', menu='Menu principal', langlabel='Langue',
+    nav=['Séjour', 'Chambres', 'Salon de thé', 'La région', 'Contact'], navbook='Réserver', menu='Menu principal', langlabel='Langue',
     eyebrow="Chambres d'hôtes dans le Westhoek",
     h1="Dormir dans l'ancienne maison du chapelain de Reninge",
     lead="Cinq chambres, chacune avec sa propre couleur, un copieux petit-déjeuner aux produits du terroir et les vastes prairies de l'Yser juste derrière le village.",
@@ -107,7 +107,7 @@ T = {
             ('± 15 min', 'Dixmude', "La Tour de l'Yser et le Boyau de la Mort, l'une des tranchées de la Première Guerre mondiale les mieux conservées."),
             ('± 10 min', 'Westvleteren', "L'abbaye Saint-Sixte et le centre d'accueil In de Vrede, connu pour sa bière trappiste."),
             ('± 30 min', 'La côte', 'Nieuport et La Panne pour une journée de mer et de plage.')],
-    book_eyebrow='Réservation', book_h='Réservez votre chambre',
+    book_eyebrow='Réservation et contact', book_h='Réservez votre chambre',
     book_lead='Consultez les dates libres et réservez directement chez nous. Une question ? Appelez-nous ou envoyez-nous un e-mail.',
     book_btn='Réserver en direct', call='Nous appeler', route='Itinéraire',
     contact=['Adresse', 'Téléphone', 'E-mail', 'Petit-déjeuner', 'Salon de thé'], teatime='été mer.–sam., hiver ven.–sam., 14h00 – 18h00',
@@ -119,7 +119,7 @@ T = {
     path='/en/', htmllang='en',
     title="l'Heritage · B&B and tearoom in Reninge, Belgium",
     desc="Bed & breakfast in the old chaplain's house in Reninge, between Ypres, Poperinge and Diksmuide. Five rooms, breakfast with local produce, from €80 a night.",
-    nav=['Your stay', 'Rooms', 'Tearoom', 'The area'], navbook='Book a room', menu='Main menu', langlabel='Language',
+    nav=['Your stay', 'Rooms', 'Tearoom', 'The area', 'Contact'], navbook='Book a room', menu='Main menu', langlabel='Language',
     eyebrow='Bed &amp; breakfast in Flanders Fields',
     h1="Stay in the old chaplain's house of Reninge",
     lead='Five rooms, each with its own colour, a generous breakfast with local produce and the wide Yser meadows just beyond the village.',
@@ -156,7 +156,7 @@ T = {
             ('± 15 min', 'Diksmuide', 'The Yser Tower and the Trench of Death, one of the best-preserved trenches of the First World War.'),
             ('± 10 min', 'Westvleteren', 'Saint Sixtus Abbey and the In de Vrede visitor centre, known for its Trappist beer.'),
             ('± 30 min', 'The coast', 'Nieuwpoort and De Panne for a day by the sea.')],
-    book_eyebrow='Booking', book_h='Book your room',
+    book_eyebrow='Booking and contact', book_h='Book your room',
     book_lead='See which dates are free and book online, directly with us. Questions first? Call or email us.',
     book_btn='Book direct', call='Call us', route='Directions',
     contact=['Address', 'Phone', 'Email', 'Breakfast', 'Tearoom'], teatime='summer Wed–Sat, winter Fri–Sat, 14:00 – 18:00',
@@ -172,7 +172,7 @@ SLIDES = ['slide-gevel', 'slide-terras', 'slide-ontbijtzaal', 'slide-vermillion'
 SLIDE_POS = {'slide-terras': ' style="object-position:50% 30%"'}
 
 HEART = '<svg viewBox="0 0 24 20" aria-hidden="true"><path d="M12 20C6 16 0 12 0 6.5 0 2.8 2.7 0 6 0c2.6 0 4.6 1.6 6 3.6C13.4 1.6 15.4 0 18 0c3.3 0 6 2.8 6 6.5C24 12 18 16 12 20z"/></svg>'
-IDS = ['verblijf', 'kamers', 'tearoom', 'streek']
+IDS = ['verblijf', 'kamers', 'tearoom', 'streek', 'boeken']
 
 
 def page(lang):
@@ -337,7 +337,7 @@ def page(lang):
           <a class="btn ghost" href="{MAPS}" {ext}>{t['route']}</a>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <dl>
           <dt>{ct[0]}</dt><dd>Dorpplaats 15, 8647 Reninge</dd>
           <dt>{ct[1]}</dt><dd><a href="tel:+32497421694">0497 42 16 94</a></dd>
