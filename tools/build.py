@@ -11,8 +11,8 @@ MAPS = 'https://www.google.com/maps/search/?api=1&query=Dorpplaats+15+8647+Renin
 ROOMS = [
     ('verm', 'Vermillion', 'kamer-vermillion', 1),
     ('oran', 'Orange', 'kamer-orange', 1),
-    ('bgris', 'Bleu gris', 'kamer-bleu-gris', 1),
-    ('bblanc', 'Bleu blanc', 'kamer-bleu-blanc', 2),
+    ('bgris', 'Bleu gris', 'kamer-bleu-blanc', 1),
+    ('bblanc', 'Bleu blanc', 'kamer-bleu-gris', 2),
     ('vert', 'Vert', 'kamer-vert', 2),
 ]
 
@@ -34,19 +34,20 @@ T = {
     breakfastalt='Gedekte ontbijttafel met fruit, kaas, croissants en bloemetjesporselein',
     expect=[('Ontbijt met streekproducten', 'Elke ochtend tussen 8 en 10 uur. Vroeger vertrekken kan, laat het ons gewoon weten.'),
             ('Rekening met je dieet', 'Suikervrij, glutenvrij of andere wensen? Vermeld het bij je boeking.'),
-            ('Vijf kamers, vijf kleuren', 'Elke kamer heeft een eigen karakter en uitzicht, van de kerktoren tot de weilanden.'),
+            ('Eigen badkamer', 'Elke kamer heeft een eigen badkamertje met douche, toilet en lavabo.'),
             ('Welkom voor fietsers en wandelaars', 'Het fietsknooppuntennetwerk en de wandelroutes van de Westhoek vertrekken vlak bij de deur.')],
     rooms_eyebrow='Kamers', rooms_h='Kies je kleur',
-    rooms_p=['Elke kamer draagt de naam van haar kleur. Allemaal met ontbijt inbegrepen, de prijs hangt alleen af van het aantal personen.',
+    rooms_p=['Elke kamer draagt de naam van haar kleur. Elke kamer heeft een eigen badkamertje met douche, toilet en lavabo. Het ontbijt is altijd inbegrepen, de prijs hangt alleen af van het aantal personen.',
              'Binnen vind je hoge plafonds, oude deuren, een kroonluchter hier en daar en behang met karakter. Een huis met een verleden, waar je meteen thuiskomt.'],
     gangalt="Een jonge gast met een oude koffer in de gang van l'Heritage",
     floor=['1e verdieping', '2e verdieping'], roomword='Kamer',
     rooms=['Uitzicht op de kerktoren, twee eenpersoonsbedden.', 'Op het oosten, met de zonsopgang boven de IJzervlakte.',
            'Aan de achterkant van het huis, de rustigste plek.', 'Knus, met dakkapel en zicht over de IJzerbroeken.', 'Een stille kamer onder het dak.'],
     prices_label='Prijzen', p1='1 persoon', p2='2 personen', pernight='per nacht, ontbijt inbegrepen',
-    tea_eyebrow='Tearoom', tea_h='Op vrijdag en zaterdag staat de koffie klaar',
+    tea_eyebrow='Tearoom', tea_h='Koffie en pannenkoeken in de tearoom',
     tea_p='Ook wie niet blijft slapen is welkom. Op het zonnige terras of bij de open haard bakken we verse pannenkoeken volgens het familierecept, en schenken we koffie voor fietsers en wandelaars die even willen uitblazen.',
-    tealt='De tearoom met stenen bar, kroonluchter en hoge ramen', days=['Vrijdag', 'Zaterdag'],
+    tealt='De tearoom met stenen bar, kroonluchter en hoge ramen', seasons=[('Zomer', 'van Pasen tot ons verlof eind september', 'woensdag tot zaterdag'), ('Winter', 'van begin oktober tot Pasen', 'vrijdag en zaterdag')],
+    holiday='Een tussentijds verlof wordt steeds op voorhand aangekondigd in de zaak.',
     area_eyebrow='De streek', area_h='Wat je vanuit Reninge kunt ontdekken',
     area_lead='De Westhoek is vlak, groen en vol verhalen. Een paar tips van ons, op fiets- of korte autoafstand.',
     places=[('Vlak bij huis', 'IJzerbroeken &amp; De Blankaart', 'Natte weilanden langs de IJzer, met in de winter duizenden ganzen. Ideaal om te wandelen en vogels te kijken.'),
@@ -58,7 +59,7 @@ T = {
     book_eyebrow='Boeken', book_h='Boek je kamer',
     book_lead='Bekijk de vrije data en boek meteen online, rechtstreeks bij ons. Liever eerst iets vragen? Bel of mail ons gerust.',
     book_btn='Boek rechtstreeks', call='Bel ons', route='Route',
-    contact=['Adres', 'Telefoon', 'E-mail', 'Ontbijt', 'Tearoom'], teatime='vr en za, 14:00 – 18:00',
+    contact=['Adres', 'Telefoon', 'E-mail', 'Ontbijt', 'Tearoom'], teatime='zomer wo–za, winter vr–za, 14:00 – 18:00',
     foot='B&amp;B en tearoom · Dorpplaats 15, 8647 Reninge',
     goeste1="Zin in l'Heritage-ijs of streekproducten?",
     goeste2=f"Die vind je niet in Reninge, maar in ons restaurant en streekwinkel <a href=\"{GOESTE}\">Goeste in Poperinge</a>, op een kwartiertje rijden.",
@@ -80,19 +81,20 @@ T = {
     breakfastalt='Table de petit-déjeuner avec fruits, fromages, croissants et porcelaine fleurie',
     expect=[('Petit-déjeuner du terroir', "Chaque matin entre 8 et 10 heures. Vous partez plus tôt ? Il suffit de nous le dire."),
             ('Régimes respectés', 'Sans sucre, sans gluten ou autre souhait ? Indiquez-le lors de la réservation.'),
-            ('Cinq chambres, cinq couleurs', "Chaque chambre a son caractère et sa vue, du clocher de l'église aux prairies."),
+            ('Salle de bain privée', 'Chaque chambre dispose de sa propre petite salle de bain avec douche, toilettes et lavabo.'),
             ('Cyclistes et randonneurs bienvenus', 'Le réseau de points-nœuds cyclables et les promenades du Westhoek partent tout près de la porte.')],
     rooms_eyebrow='Chambres', rooms_h='Choisissez votre couleur',
-    rooms_p=['Chaque chambre porte le nom de sa couleur. Le petit-déjeuner est toujours compris, le prix dépend seulement du nombre de personnes.',
+    rooms_p=['Chaque chambre porte le nom de sa couleur. Chacune a sa propre petite salle de bain avec douche, toilettes et lavabo. Le petit-déjeuner est toujours compris, le prix dépend seulement du nombre de personnes.',
              "À l'intérieur : hauts plafonds, portes anciennes, un lustre ici et là et des papiers peints pleins de caractère. Une maison chargée d'histoire où l'on se sent tout de suite chez soi."],
     gangalt="Un jeune hôte avec une vieille valise dans le couloir de l'Heritage",
     floor=['1er étage', '2e étage'], roomword='Chambre',
     rooms=["Vue sur le clocher, deux lits simples.", "Orientée à l'est, avec le lever du soleil sur la plaine de l'Yser.",
            "À l'arrière de la maison, la plus calme.", "Douillette, avec lucarne et vue sur les prairies de l'Yser.", 'Une chambre paisible sous le toit.'],
     prices_label='Tarifs', p1='1 personne', p2='2 personnes', pernight='par nuit, petit-déjeuner compris',
-    tea_eyebrow='Salon de thé', tea_h='Le vendredi et le samedi, le café est prêt',
+    tea_eyebrow='Salon de thé', tea_h='Café et crêpes au salon de thé',
     tea_p="Même sans y dormir, vous êtes le bienvenu. Sur la terrasse ensoleillée ou au coin du feu, nous préparons des crêpes selon la recette de famille et servons un café aux cyclistes et promeneurs qui veulent souffler un moment.",
-    tealt='Le salon de thé avec son bar en pierre, son lustre et ses hautes fenêtres', days=['Vendredi', 'Samedi'],
+    tealt='Le salon de thé avec son bar en pierre, son lustre et ses hautes fenêtres', seasons=[('Été', "de Pâques jusqu'à nos congés fin septembre", 'du mercredi au samedi'), ('Hiver', 'de début octobre à Pâques', 'vendredi et samedi')],
+    holiday="Une fermeture pour congés en cours de saison est toujours annoncée à l'avance au salon de thé.",
     area_eyebrow='La région', area_h='À découvrir depuis Reninge',
     area_lead="Le Westhoek est plat, vert et plein d'histoires. Quelques conseils, à vélo ou à quelques minutes en voiture.",
     places=[('Tout près', "Prairies de l'Yser &amp; De Blankaart", "Prairies humides le long de l'Yser, avec des milliers d'oies en hiver. Idéal pour marcher et observer les oiseaux."),
@@ -104,7 +106,7 @@ T = {
     book_eyebrow='Réservation', book_h='Réservez votre chambre',
     book_lead='Consultez les dates libres et réservez directement chez nous. Une question ? Appelez-nous ou envoyez-nous un e-mail.',
     book_btn='Réserver en direct', call='Nous appeler', route='Itinéraire',
-    contact=['Adresse', 'Téléphone', 'E-mail', 'Petit-déjeuner', 'Salon de thé'], teatime='ven. et sam., 14h00 – 18h00',
+    contact=['Adresse', 'Téléphone', 'E-mail', 'Petit-déjeuner', 'Salon de thé'], teatime='été mer.–sam., hiver ven.–sam., 14h00 – 18h00',
     foot="Chambres d'hôtes et salon de thé · Dorpplaats 15, 8647 Reninge",
     goeste1="Envie de glace l'Heritage ou de produits régionaux ?",
     goeste2=f"Vous ne les trouverez pas à Reninge, mais dans notre restaurant et épicerie régionale <a href=\"{GOESTE}\">Goeste à Poperinge</a>, à un quart d'heure en voiture.",
@@ -126,19 +128,20 @@ T = {
     breakfastalt='Breakfast table with fruit, cheese, croissants and floral china',
     expect=[('Breakfast with local produce', 'Every morning between 8 and 10. Leaving early? Just let us know.'),
             ('Dietary needs', 'Sugar-free, gluten-free or something else? Mention it when you book.'),
-            ('Five rooms, five colours', 'Every room has its own character and view, from the church tower to the meadows.'),
+            ('Private bathroom', 'Every room has its own small bathroom with shower, toilet and washbasin.'),
             ('Cyclists and walkers welcome', 'The cycle network and walking routes of the Westhoek start right outside the door.')],
     rooms_eyebrow='Rooms', rooms_h='Pick your colour',
-    rooms_p=['Each room is named after its colour. Breakfast is always included and the price depends only on the number of guests.',
+    rooms_p=['Each room is named after its colour. Each has its own small bathroom with shower, toilet and washbasin. Breakfast is always included and the price depends only on the number of guests.',
              'Inside you will find high ceilings, old doors, the odd chandelier and wallpaper with character. A house with a past, where you feel at home straight away.'],
     gangalt="A young guest with an old suitcase in the hallway of l'Heritage",
     floor=['1st floor', '2nd floor'], roomword='Room',
     rooms=['View of the church tower, two single beds.', 'Facing east, with sunrise over the Yser plain.',
            'At the back of the house, the quietest spot.', 'Cosy, with a dormer window overlooking the Yser meadows.', 'A peaceful room under the roof.'],
     prices_label='Prices', p1='1 person', p2='2 people', pernight='per night, breakfast included',
-    tea_eyebrow='Tearoom', tea_h='Coffee is on every Friday and Saturday',
+    tea_eyebrow='Tearoom', tea_h='Coffee and pancakes in the tearoom',
     tea_p="You are welcome even if you are not staying the night. On the sunny terrace or by the fireplace we bake fresh pancakes from the family recipe and pour coffee for cyclists and walkers taking a break.",
-    tealt='The tearoom with its stone bar, chandelier and tall windows', days=['Friday', 'Saturday'],
+    tealt='The tearoom with its stone bar, chandelier and tall windows', seasons=[('Summer', 'from Easter until our holiday at the end of September', 'Wednesday to Saturday'), ('Winter', 'from early October until Easter', 'Friday and Saturday')],
+    holiday='Any closure for holidays during the season is always announced in advance at the tearoom.',
     area_eyebrow='The area', area_h='What to discover from Reninge',
     area_lead='The Westhoek is flat, green and full of stories. A few tips from us, by bike or a short drive away.',
     places=[('On the doorstep', 'Yser meadows &amp; De Blankaart', 'Wet meadows along the Yser, with thousands of geese in winter. Perfect for walking and birdwatching.'),
@@ -150,7 +153,7 @@ T = {
     book_eyebrow='Booking', book_h='Book your room',
     book_lead='See which dates are free and book online, directly with us. Questions first? Call or email us.',
     book_btn='Book direct', call='Call us', route='Directions',
-    contact=['Address', 'Phone', 'Email', 'Breakfast', 'Tearoom'], teatime='Fri and Sat, 14:00 – 18:00',
+    contact=['Address', 'Phone', 'Email', 'Breakfast', 'Tearoom'], teatime='summer Wed–Sat, winter Fri–Sat, 14:00 – 18:00',
     foot='B&amp;B and tearoom · Dorpplaats 15, 8647 Reninge, Belgium',
     goeste1="Fancy l'Heritage ice cream or local produce?",
     goeste2=f"You will not find them in Reninge, but at our restaurant and regional shop <a href=\"{GOESTE}\">Goeste in Poperinge</a>, a fifteen-minute drive away.",
@@ -184,6 +187,7 @@ def page(lang):
     places = ''.join(f'<div class="place"><span class="dist">{a}</span><h3>{b}</h3><p>{c}</p></div>\n        ' for a, b, c in t['places'])
     stay_p = ''.join(f'<p>{p}</p>\n          ' for p in t['stay_p'])
     rooms_p = ''.join(f'<p class="lead">{p}</p>\n        ' for p in t['rooms_p'])
+    hours = ''.join(f'<div><dt>{n}<small>{w}</small></dt><dd>{d}<br>14:00 – 18:00</dd></div>\n          ' for n, w, d in t['seasons'])
     ct = t['contact']
     return f'''<!doctype html>
 <html lang="{t['htmllang']}">
@@ -288,9 +292,8 @@ def page(lang):
           <p>{t['tea_p']}</p>
         </div>
         <dl class="hours">
-          <dt>{t['days'][0]}</dt><dd>14:00 – 18:00</dd>
-          <dt>{t['days'][1]}</dt><dd>14:00 – 18:00</dd>
-        </dl>
+          {hours}</dl>
+        <p class="hours-note">{t['holiday']}</p>
       </div>
     </div>
   </section>
