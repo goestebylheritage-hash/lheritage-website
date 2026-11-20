@@ -6,8 +6,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://www.lheritage.be'
 CUBILIS = 'https://reservations.cubilis.eu/b-and-b-lheritage-reninge'
 GOESTE = 'https://goestepoperinge.be'
-KOMOOT_WALK = 'https://www.komoot.com/guide/654180/hiking-around-lo-reninge'
-KOMOOT_BIKE = 'https://www.komoot.com/guide/654183/cycling-around-lo-reninge'
+WALK_LINK = 'https://www.toerismewesthoek.be/en/hiking/walking-network'
+BIKE_LINK = 'https://www.toerismewesthoek.be/nl/fietsen/routeplanner'
+BIKE_ROUTE = 'https://www.lo-reninge.be/ijzerbroekenfietsroute'
 MAPS = 'https://www.google.com/maps/search/?api=1&query=Dorpplaats+15+8647+Reninge'
 
 ROOMS = [
@@ -54,20 +55,20 @@ T = {
     holiday='Een tussentijds verlof wordt steeds op voorhand aangekondigd in de zaak.',
     area_eyebrow='De streek', area_h='Wat je vanuit Reninge kunt ontdekken',
     out_eyebrow='Wandelen en fietsen', out_h='Vanuit Reninge de polder in',
-    out_lead='Je hoeft de auto niet te nemen. Deze routes beginnen in of vlak bij Reninge, langs de IJzer en door de natte weilanden van de IJzerbroeken.',
+    out_lead='Officiële routes van Westtoer en Toerisme Westhoek, rond Reninge, langs de IJzer en door de natte weilanden van de IJzerbroeken.',
     walk_h='Wandelen', bike_h='Fietsen', see_h='Onderweg te zien',
-    walks=[('± 6 km', 'Blankaart-panoramawandeling', 'Vertrekt in Reninge, met wijde uitzichten over het natuurgebied De Blankaart en de IJzerbroeken.'),
-           ('± 8,5 km', 'Knokkebrug en De Blankaart', 'Een lus langs de IJzer en de vijver van De Blankaart. In de winter zie je er duizenden ganzen.'),
-           ('± 8 km', 'Beverdijkwandelpad', 'Over de oude dijk langs de IJzer bij Pollinkhove.'),
-           ('± 10,5 km', 'Drie Grachten', 'Vanuit Noordschote naar de plek waar drie waterlopen samenkomen, een belangrijke plek in de Eerste Wereldoorlog.')],
-    bikes=[('± 39 km', 'Lo bij de IJzer', 'Een vlakke lus langs de IJzer en door het historische stadje Lo. Geschikt voor iedereen.'),
-           ('Op maat', 'Fietsknooppuntennetwerk Westhoek', 'De knooppunten lopen door het dorp. Zo stippel je zelf een tocht uit, kort of lang, naar Diksmuide, Ieper of Poperinge.'),
-           ('± 12 km', 'Langs de IJzer naar Diksmuide', 'Rustig over het jaagpad tot aan de IJzertoren.')],
+    walks=[('± 10 km', 'Blankaartwandelroute', 'Vertrekt aan het bezoekerscentrum De Blankaart in Woumen. Onderweg zeven vogelkijkpunten en kijktorens over de natte weilanden.'),
+           ('± 6,5 km', 'Drie Grachten', 'Een lus naar de plek waar drie waterlopen samenkomen, een belangrijke plek in de Eerste Wereldoorlog.'),
+           ('± 8 km', 'Beverdijk', 'Een lus van het wandelnetwerk IJzervallei over de oude dijk langs de IJzer.'),
+           ('± 110 km', 'Wandelnetwerk De Blankaart', 'Het wandelnetwerk van Westtoer rond De Blankaart en de IJzerbroeken. Met de knooppunten maak je zelf een wandeling op maat.')],
+    bikes=[('49,7 km', 'IJzerbroekenfietsroute', 'Bewegwijzerde lus langs de IJzer, door Reninge, Lo, Fintele, Stavele en Alveringem. Volg de zeshoekige bordjes.'),
+           ('Op maat', 'Fietsnetwerk Westhoek', 'Het fietsknooppuntennetwerk loopt door het dorp. Met de routeplanner van Toerisme Westhoek stippel je zelf een tocht uit.'),
+           ('Kaart', 'Fietskaart Westhoek', 'De fietsnetwerkkaart koop je bij de Dienst Toerisme in Lo, Markt 11.')],
     sights=[('Lo, ± 5 km', 'Stadhuis met belfort', 'Uit 1565–1566, beschermd als UNESCO-werelderfgoed.'),
             ('Lo', 'Caesarsboom en stadsmuur', 'Een eeuwenoude taxus achter de middeleeuwse stadsmuur.'),
             ('Lo, sinds 2026', 'Uitkijkplatform Sint-Pieterskerk', '163 treden naar 31 meter hoogte, met uitzicht over de hele polder.'),
             ('Reninge', 'Sint-Rictrudiskerk', 'De dorpskerk, pal naast l\'Heritage.')],
-    more_walk='Meer wandelroutes', more_bike='Meer fietsroutes',
+    more_walk='Wandelnetwerken van Toerisme Westhoek', more_bike='Routeplanner van Toerisme Westhoek',
     out_note='Afstanden zijn bij benadering. Vraag ons gerust om tips als je aankomt.',
     area_lead='De Westhoek is vlak, groen en vol verhalen. Een paar tips van ons, op fiets- of korte autoafstand.',
     places=[('Vlak bij huis', 'IJzerbroeken &amp; De Blankaart', 'Natte weilanden langs de IJzer, met in de winter duizenden ganzen. Ideaal om te wandelen en vogels te kijken.'),
@@ -119,20 +120,20 @@ T = {
     holiday="Une fermeture pour congés en cours de saison est toujours annoncée à l'avance au salon de thé.",
     area_eyebrow='La région', area_h='À découvrir depuis Reninge',
     out_eyebrow='Randonnées à pied et à vélo', out_h='Depuis Reninge, en pleine nature',
-    out_lead="Pas besoin de prendre la voiture. Ces itinéraires partent de Reninge ou tout près, le long de l'Yser et à travers les prairies humides.",
+    out_lead="Des itinéraires officiels de Westtoer et Toerisme Westhoek, autour de Reninge, le long de l'Yser et à travers les prairies humides.",
     walk_h='À pied', bike_h='À vélo', see_h='À voir en chemin',
-    walks=[('± 6 km', 'Promenade panoramique de la Blankaart', "Départ à Reninge, avec de larges vues sur la réserve naturelle De Blankaart et les prairies de l'Yser."),
-           ('± 8,5 km', 'Knokkebrug et De Blankaart', "Une boucle le long de l'Yser et de l'étang de la Blankaart. En hiver, des milliers d'oies s'y posent."),
-           ('± 8 km', 'Sentier du Beverdijk', "Sur l'ancienne digue de l'Yser, près de Pollinkhove."),
-           ('± 10,5 km', 'Drie Grachten', "Depuis Noordschote jusqu'au confluent de trois cours d'eau, un lieu marquant de la Première Guerre mondiale.")],
-    bikes=[('± 39 km', "Lo au bord de l'Yser", "Une boucle plate le long de l'Yser et par la petite ville historique de Lo. Accessible à tous."),
-           ('Sur mesure', 'Réseau cyclable à points-nœuds du Westhoek', 'Le réseau passe par le village. Composez votre propre balade, courte ou longue, vers Dixmude, Ypres ou Poperinge.'),
-           ('± 12 km', "Le long de l'Yser jusqu'à Dixmude", "Tranquillement sur le chemin de halage jusqu'à la Tour de l'Yser.")],
+    walks=[('± 10 km', 'Promenade de la Blankaart', "Départ au centre d'accueil De Blankaart à Woumen. En chemin, sept observatoires et tours d'observation sur les prairies humides."),
+           ('± 6,5 km', 'Drie Grachten', "Une boucle jusqu'au confluent de trois cours d'eau, un lieu marquant de la Première Guerre mondiale."),
+           ('± 8 km', 'Beverdijk', "Une boucle du réseau de promenade de la vallée de l'Yser, sur l'ancienne digue."),
+           ('± 110 km', 'Réseau de promenade De Blankaart', "Le réseau de Westtoer autour de la Blankaart et des prairies de l'Yser. Avec les points-nœuds, composez votre propre promenade.")],
+    bikes=[('49,7 km', 'Itinéraire des prairies de l\'Yser', "Boucle balisée le long de l'Yser, par Reninge, Lo, Fintele, Stavele et Alveringem. Suivez les panneaux hexagonaux."),
+           ('Sur mesure', 'Réseau cyclable du Westhoek', 'Le réseau à points-nœuds passe par le village. Planifiez votre balade avec le planificateur de Toerisme Westhoek.'),
+           ('Carte', 'Carte vélo du Westhoek', "La carte du réseau est en vente à l'office du tourisme de Lo, Markt 11.")],
     sights=[('Lo, ± 5 km', 'Hôtel de ville et beffroi', 'Datant de 1565–1566, inscrit au patrimoine mondial de l\'UNESCO.'),
             ('Lo', 'Arbre de César et remparts', 'Un if plusieurs fois centenaire derrière les remparts médiévaux.'),
             ('Lo, depuis 2026', "Belvédère de l'église Saint-Pierre", '163 marches jusqu\'à 31 mètres, avec vue sur tout le polder.'),
             ('Reninge', 'Église Sainte-Rictrude', "L'église du village, juste à côté de l'Heritage.")],
-    more_walk="Plus d'itinéraires à pied", more_bike="Plus d'itinéraires à vélo",
+    more_walk='Réseaux de promenade de Toerisme Westhoek', more_bike='Planificateur de Toerisme Westhoek',
     out_note="Les distances sont approximatives. N'hésitez pas à nous demander conseil à votre arrivée.",
     area_lead="Le Westhoek est plat, vert et plein d'histoires. Quelques conseils, à vélo ou à quelques minutes en voiture.",
     places=[('Tout près', "Prairies de l'Yser &amp; De Blankaart", "Prairies humides le long de l'Yser, avec des milliers d'oies en hiver. Idéal pour marcher et observer les oiseaux."),
@@ -184,20 +185,20 @@ T = {
     holiday='Any closure for holidays during the season is always announced in advance at the tearoom.',
     area_eyebrow='The area', area_h='What to discover from Reninge',
     out_eyebrow='Walking and cycling', out_h='Straight from Reninge into the countryside',
-    out_lead='No need for the car. These routes start in or near Reninge, along the Yser and through the wet meadows of the Yser floodplain.',
+    out_lead='Official routes from Westtoer and Toerisme Westhoek, around Reninge, along the Yser and through the wet meadows of the Yser floodplain.',
     walk_h='Walking', bike_h='Cycling', see_h='Worth a stop',
-    walks=[('± 6 km', 'Blankaart panorama walk', 'Starts in Reninge, with wide views over the De Blankaart nature reserve and the Yser meadows.'),
-           ('± 8.5 km', 'Knokkebrug and De Blankaart', 'A loop along the Yser and the Blankaart lake. In winter thousands of geese gather here.'),
-           ('± 8 km', 'Beverdijk path', 'Along the old Yser dyke near Pollinkhove.'),
-           ('± 10.5 km', 'Drie Grachten', 'From Noordschote to the point where three waterways meet, a key spot in the First World War.')],
-    bikes=[('± 39 km', 'Lo along the Yser', 'A flat loop along the Yser and through the historic little town of Lo. Easy for everyone.'),
-           ('Your choice', 'Westhoek cycle node network', 'The network runs through the village. Plan your own ride, short or long, to Diksmuide, Ypres or Poperinge.'),
-           ('± 12 km', 'Along the Yser to Diksmuide', 'An easy ride on the towpath to the Yser Tower.')],
+    walks=[('± 10 km', 'Blankaart walk', 'Starts at the De Blankaart visitor centre in Woumen. Along the way, seven birdwatching points and towers over the wet meadows.'),
+           ('± 6.5 km', 'Drie Grachten', 'A loop to the point where three waterways meet, a key spot in the First World War.'),
+           ('± 8 km', 'Beverdijk', 'A loop of the Yser valley walking network along the old Yser dyke.'),
+           ('± 110 km', 'De Blankaart walking network', 'Westtoer\'s walking network around De Blankaart and the Yser meadows. Use the junctions to plan your own walk.')],
+    bikes=[('49.7 km', 'IJzerbroeken cycle route', 'A signposted loop along the Yser, through Reninge, Lo, Fintele, Stavele and Alveringem. Follow the hexagonal signs.'),
+           ('Your choice', 'Westhoek cycle network', 'The cycle node network runs through the village. Plan your own ride with the Toerisme Westhoek route planner.'),
+           ('Map', 'Westhoek cycle map', 'Buy the network map at the tourist office in Lo, Markt 11.')],
     sights=[('Lo, ± 5 km', 'Town hall and belfry', 'Built in 1565–1566, a UNESCO World Heritage site.'),
             ('Lo', "Caesar's Tree and town wall", 'A centuries-old yew behind the medieval town wall.'),
             ('Lo, since 2026', 'Sint-Pieterskerk lookout', '163 steps up to 31 metres, with views over the whole polder.'),
             ('Reninge', 'Sint-Rictrudis church', "The village church, right next to l'Heritage.")],
-    more_walk='More walks', more_bike='More bike rides',
+    more_walk='Toerisme Westhoek walking networks', more_bike='Toerisme Westhoek route planner',
     out_note='Distances are approximate. Feel free to ask us for tips when you arrive.',
     area_lead='The Westhoek is flat, green and full of stories. A few tips from us, by bike or a short drive away.',
     places=[('On the doorstep', 'Yser meadows &amp; De Blankaart', 'Wet meadows along the Yser, with thousands of geese in winter. Perfect for walking and birdwatching.'),
@@ -389,13 +390,14 @@ def page(lang):
           <h3>{t['walk_h']}</h3>
           <ul>
             {walks}</ul>
-          <a class="more" href="{KOMOOT_WALK}" {ext}>{t['more_walk']} →</a>
+          <a class="more" href="{WALK_LINK}" {ext}>{t['more_walk']} →</a>
         </div>
         <div class="route-col">
           <h3>{t['bike_h']}</h3>
           <ul>
             {bikes}</ul>
-          <a class="more" href="{KOMOOT_BIKE}" {ext}>{t['more_bike']} →</a>
+          <a class="more" href="{BIKE_LINK}" {ext}>{t['more_bike']} →</a>
+          <a class="more" href="{BIKE_ROUTE}" {ext}>{t['bikes'][0][1]} →</a>
         </div>
         <div class="route-col">
           <h3>{t['see_h']}</h3>
