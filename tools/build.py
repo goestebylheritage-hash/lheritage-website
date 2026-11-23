@@ -29,7 +29,7 @@ T = {
     h1='Slapen in de oude kapelanij van Reninge',
     lead='Vijf kamers met elk hun eigen kleur, een uitgebreid ontbijt met streekproducten en de weidse IJzerbroeken vlak achter het dorp.',
     cta1='Bekijk beschikbaarheid', cta2='Wat je mag verwachten',
-    pricenote='<strong>€80</strong> per nacht voor 1 persoon · <strong>€115</strong> voor 2 personen · ontbijt inbegrepen',
+    pricenote='Vanaf <strong>€80</strong> per nacht voor 1 persoon en <strong>€110</strong> voor 2 personen, ontbijt inbegrepen',
     slides=["De oude kapelanij van l'Heritage aan de Dorpplaats in Reninge", 'Het terras en de tuin met buxushagen en hortensia\'s', 'De ontbijtzaal met rode wanden, kroonluchter en gedekte tafels', 'Kamer Vermillion met rode wand en bloemetjesdekbed', 'Ontbijt van bovenaf: broodjes, kaas, fruit en koffie', 'De tearoom met stenen bar en kroonluchter'],
     slidelabel='Foto', slidenav='Kies een foto',
     heroalt="De oude kapelanij van l'Heritage aan de Dorpplaats in Reninge",
@@ -42,13 +42,13 @@ T = {
             ('Eigen badkamer', 'Elke kamer heeft een eigen badkamertje met douche, toilet en lavabo.'),
             ('Welkom voor fietsers en wandelaars', 'Het fietsknooppuntennetwerk en de wandelroutes van de Westhoek vertrekken vlak bij de deur.')],
     rooms_eyebrow='Kamers', rooms_h='Kies je kleur',
-    rooms_p=['Elke kamer draagt de naam van haar kleur. Elke kamer heeft een eigen badkamertje met douche, toilet en lavabo. Het ontbijt is altijd inbegrepen, de prijs hangt alleen af van het aantal personen.',
+    rooms_p=['Elke kamer draagt de naam van haar kleur. Elke kamer heeft een eigen badkamertje met douche, toilet en lavabo. Het ontbijt is altijd inbegrepen; de prijs hangt af van het aantal personen en het aantal nachten.',
              'Binnen vind je hoge plafonds, oude deuren, een kroonluchter hier en daar en behang met karakter. Een huis met een verleden, waar je meteen thuiskomt.'],
     gangalt="Een jonge gast met een oude koffer in de gang van l'Heritage",
     floor=['1e verdieping', '2e verdieping'], roomword='Kamer',
     rooms=['Uitzicht op de kerktoren, twee eenpersoonsbedden.', 'Op het oosten, met de zonsopgang boven de IJzervlakte.',
            'Aan de achterkant van het huis, de rustigste plek.', 'Knus, met dakkapel en zicht over de IJzerbroeken.', 'Een stille kamer onder het dak.'],
-    prices_label='Prijzen', p1='1 persoon', p2='2 personen', pernight='per nacht, ontbijt inbegrepen',
+    prices_label='Prijzen', p1='1 persoon', p2='2 personen', pernight='per nacht bij 2 nachten of meer', onenight='Eén nacht', pricenote2='Het ontbijt is altijd inbegrepen. Blijf je maar één nacht, dan komt er €5 (1 persoon) of €10 (2 personen) bij.',
     tea_eyebrow='Tearoom', tea_h='Koffie en pannenkoeken in de tearoom',
     tea_p='Ook wie niet blijft slapen is welkom. Op het zonnige terras of bij de open haard bakken we verse pannenkoeken volgens het familierecept, en schenken we koffie voor fietsers en wandelaars die even willen uitblazen.',
     tealt='De tearoom met stenen bar, kroonluchter en hoge ramen', seasons=[('Zomer', 'van Pasen tot ons verlof eind september', 'woensdag tot zaterdag'), ('Winter', 'van begin oktober tot Pasen', 'vrijdag en zaterdag')],
@@ -94,7 +94,7 @@ T = {
     h1="Dormir dans l'ancienne maison du chapelain de Reninge",
     lead="Cinq chambres, chacune avec sa propre couleur, un copieux petit-déjeuner aux produits du terroir et les vastes prairies de l'Yser juste derrière le village.",
     cta1='Voir les disponibilités', cta2='À quoi vous attendre',
-    pricenote='<strong>80 €</strong> la nuit pour 1 personne · <strong>115 €</strong> pour 2 personnes · petit-déjeuner compris',
+    pricenote='À partir de <strong>80 €</strong> la nuit pour 1 personne et <strong>110 €</strong> pour 2 personnes, petit-déjeuner compris',
     slides=["L'ancienne maison du chapelain, l'Heritage, sur la Dorpplaats de Reninge", 'La terrasse et le jardin avec haies de buis et hortensias', 'La salle du petit-déjeuner aux murs rouges, avec lustre et tables dressées', 'La chambre Vermillion avec son mur rouge et sa couette fleurie', 'Le petit-déjeuner vu du dessus : petits pains, fromages, fruits et café', 'Le salon de thé avec son bar en pierre et son lustre'],
     slidelabel='Photo', slidenav='Choisir une photo',
     heroalt="L'ancienne maison du chapelain, l'Heritage, sur la Dorpplaats de Reninge",
@@ -107,13 +107,13 @@ T = {
             ('Salle de bain privée', 'Chaque chambre dispose de sa propre petite salle de bain avec douche, toilettes et lavabo.'),
             ('Cyclistes et randonneurs bienvenus', 'Le réseau de points-nœuds cyclables et les promenades du Westhoek partent tout près de la porte.')],
     rooms_eyebrow='Chambres', rooms_h='Choisissez votre couleur',
-    rooms_p=['Chaque chambre porte le nom de sa couleur. Chacune a sa propre petite salle de bain avec douche, toilettes et lavabo. Le petit-déjeuner est toujours compris, le prix dépend seulement du nombre de personnes.',
+    rooms_p=['Chaque chambre porte le nom de sa couleur. Chacune a sa propre petite salle de bain avec douche, toilettes et lavabo. Le petit-déjeuner est toujours compris ; le prix dépend du nombre de personnes et de nuits.',
              "À l'intérieur : hauts plafonds, portes anciennes, un lustre ici et là et des papiers peints pleins de caractère. Une maison chargée d'histoire où l'on se sent tout de suite chez soi."],
     gangalt="Un jeune hôte avec une vieille valise dans le couloir de l'Heritage",
     floor=['1er étage', '2e étage'], roomword='Chambre',
     rooms=["Vue sur le clocher, deux lits simples.", "Orientée à l'est, avec le lever du soleil sur la plaine de l'Yser.",
            "À l'arrière de la maison, la plus calme.", "Douillette, avec lucarne et vue sur les prairies de l'Yser.", 'Une chambre paisible sous le toit.'],
-    prices_label='Tarifs', p1='1 personne', p2='2 personnes', pernight='par nuit, petit-déjeuner compris',
+    prices_label='Tarifs', p1='1 personne', p2='2 personnes', pernight='par nuit à partir de 2 nuits', onenight='Une seule nuit', pricenote2="Le petit-déjeuner est toujours compris. Pour une seule nuit, comptez 5 € (1 personne) ou 10 € (2 personnes) de plus.",
     tea_eyebrow='Salon de thé', tea_h='Café et crêpes au salon de thé',
     tea_p="Même sans y dormir, vous êtes le bienvenu. Sur la terrasse ensoleillée ou au coin du feu, nous préparons des crêpes selon la recette de famille et servons un café aux cyclistes et promeneurs qui veulent souffler un moment.",
     tealt='Le salon de thé avec son bar en pierre, son lustre et ses hautes fenêtres', seasons=[('Été', "de Pâques jusqu'à nos congés fin septembre", 'du mercredi au samedi'), ('Hiver', 'de début octobre à Pâques', 'vendredi et samedi')],
@@ -159,7 +159,7 @@ T = {
     h1="Stay in the old chaplain's house of Reninge",
     lead='Five rooms, each with its own colour, a generous breakfast with local produce and the wide Yser meadows just beyond the village.',
     cta1='Check availability', cta2='What to expect',
-    pricenote='<strong>€80</strong> a night for 1 person · <strong>€115</strong> for 2 people · breakfast included',
+    pricenote='From <strong>€80</strong> a night for 1 person and <strong>€110</strong> for 2 people, breakfast included',
     slides=["l'Heritage, the old chaplain's house on the village square of Reninge", 'The terrace and garden with box hedges and hydrangeas', 'The breakfast room with red walls, chandelier and laid tables', 'The Vermillion room with its red wall and floral duvet', 'Breakfast from above: rolls, cheese, fruit and coffee', 'The tearoom with its stone bar and chandelier'],
     slidelabel='Photo', slidenav='Choose a photo',
     heroalt="l'Heritage, the old chaplain's house on the village square of Reninge",
@@ -172,13 +172,13 @@ T = {
             ('Private bathroom', 'Every room has its own small bathroom with shower, toilet and washbasin.'),
             ('Cyclists and walkers welcome', 'The cycle network and walking routes of the Westhoek start right outside the door.')],
     rooms_eyebrow='Rooms', rooms_h='Pick your colour',
-    rooms_p=['Each room is named after its colour. Each has its own small bathroom with shower, toilet and washbasin. Breakfast is always included and the price depends only on the number of guests.',
+    rooms_p=['Each room is named after its colour. Each has its own small bathroom with shower, toilet and washbasin. Breakfast is always included; the price depends on the number of guests and nights.',
              'Inside you will find high ceilings, old doors, the odd chandelier and wallpaper with character. A house with a past, where you feel at home straight away.'],
     gangalt="A young guest with an old suitcase in the hallway of l'Heritage",
     floor=['1st floor', '2nd floor'], roomword='Room',
     rooms=['View of the church tower, two single beds.', 'Facing east, with sunrise over the Yser plain.',
            'At the back of the house, the quietest spot.', 'Cosy, with a dormer window overlooking the Yser meadows.', 'A peaceful room under the roof.'],
-    prices_label='Prices', p1='1 person', p2='2 people', pernight='per night, breakfast included',
+    prices_label='Prices', p1='1 person', p2='2 people', pernight='per night for stays of 2 nights or more', onenight='One night', pricenote2='Breakfast is always included. For a one-night stay we add €5 (1 person) or €10 (2 people).',
     tea_eyebrow='Tearoom', tea_h='Coffee and pancakes in the tearoom',
     tea_p="You are welcome even if you are not staying the night. On the sunny terrace or by the fireplace we bake fresh pancakes from the family recipe and pour coffee for cyclists and walkers taking a break.",
     tealt='The tearoom with its stone bar, chandelier and tall windows', seasons=[('Summer', 'from Easter until our holiday at the end of September', 'Wednesday to Saturday'), ('Winter', 'from early October until Easter', 'Friday and Saturday')],
@@ -236,7 +236,7 @@ def page(lang):
     ld = {
         "@context": "https://schema.org", "@type": "BedAndBreakfast", "name": "l'Heritage",
         "url": SITE + t['path'], "image": SITE + '/assets/img/slide-gevel.jpg', "telephone": "+32 497 42 16 94", "email": "info@lheritage.be",
-        "priceRange": "€80 – €115",
+        "priceRange": "€80 – €120",
         "address": {"@type": "PostalAddress", "streetAddress": "Dorpplaats 15", "postalCode": "8647", "addressLocality": "Reninge", "addressCountry": "BE"},
         "numberOfRooms": 5,
     }
@@ -342,9 +342,10 @@ def page(lang):
       <div class="rooms">
         {rooms}</div>
       <div class="prices" aria-label="{t['prices_label']}">
-        <div><span class="eyebrow">{t['p1']}</span><span class="amount">€80</span><small>{t['pernight']}</small></div>
-        <div><span class="eyebrow">{t['p2']}</span><span class="amount">€115</span><small>{t['pernight']}</small></div>
+        <div><span class="eyebrow">{t['p1']}</span><span class="amount">€80</span><small>{t['pernight']}</small><span class="one-night">{t['onenight']}: <strong>€85</strong></span></div>
+        <div><span class="eyebrow">{t['p2']}</span><span class="amount">€110</span><small>{t['pernight']}</small><span class="one-night">{t['onenight']}: <strong>€120</strong></span></div>
       </div>
+      <p class="price-extra">{t['pricenote2']}</p>
     </div>
   </section>
 
